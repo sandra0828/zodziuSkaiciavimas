@@ -3,6 +3,8 @@
 
 int main()
 {
+    setlocale(LC_ALL, "Lithuanian");
+
     map <string, Zodis> zodziai;
 
     string failoVardas;

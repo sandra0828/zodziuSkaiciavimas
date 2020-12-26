@@ -140,7 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="nuskaitymas.cpp" />
-    <ClCompile Include="pagalbine.cpp" />
+    <ClCompile Include="pagalbine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/utf-8</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="zodziuSkaiciavimas.cpp" />
   </ItemGroup>
   <ItemGroup>
