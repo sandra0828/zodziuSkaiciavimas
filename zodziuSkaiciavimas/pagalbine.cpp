@@ -43,22 +43,34 @@ string tikrintiZodi(string zodis)
 
 void spausdintiAtsakyma(map <string, Zodis> zodziai)
 {
+    std:: ofstream fr("rezultatas.txt");
+
     for (auto const& pair : zodziai)
     {
         if (pair.second.kiekPasikartoja > 1)
         {
-            std::cout << pair.first << ": " << pair.second.kiekPasikartoja << " (";
-            spausdintiVektoriu(pair.second.kurioseEilutese);
-            std::cout << " )"  << std::endl;
+            fr << pair.first << ": " << pair.second.kiekPasikartoja << " (";
+            spausdintiVektoriu(pair.second.kurioseEilutese, fr);
+            fr << ")"  << std::endl;
         }
         
     }
+    fr.close();
 }
 
-void spausdintiVektoriu(vector <int> kurioseEilutese)
+void spausdintiVektoriu(vector <int> kurioseEilutese, std::ofstream& fr)
 {
-    for (int skaicius : kurioseEilutese)
+    for (int i = 0; i < kurioseEilutese.size(); i++)
     {
-        std::cout << " " << skaicius;
+        if (i < kurioseEilutese.size() - 1)
+        {
+            fr << kurioseEilutese.at(i) << ", ";
+        }
+        else
+        {
+            fr << kurioseEilutese.at(i);
+        }
+        
+
     }
 }
