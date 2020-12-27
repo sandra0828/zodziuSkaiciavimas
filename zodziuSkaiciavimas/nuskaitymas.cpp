@@ -26,9 +26,12 @@ void nuskaityti(string failoVardas, map <string, Zodis>& zodziai)
         stringstream ss(eilute);
         string zodis;
 
+        
+
         while (ss >> zodis) 
         {
             string tinkamasZodis = tikrintiZodi(zodis);
+            if (zodis.size() == 1 && ispunct(zodis.front())) continue;
 
             if (tinkamasZodis.size() > 0)
             {
