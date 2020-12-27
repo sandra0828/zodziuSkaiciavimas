@@ -1,5 +1,5 @@
 # Žodžių skaičiavimas ir adresų radimas tekste
-Repozitorijoje yra du projektai: žodžių skaičiavimas (aplankas: zodziuSkaiciavimas) ir adresų radimas tekstiniame faile (aplankas: adresuRadimas).
+Repozitorijoje yra du projektai: žodžių skaičiavimas (aplankas: **zodziuSkaiciavimas**) ir adresų radimas tekstiniame faile (aplankas: **adresuRadimas**).
 
 ## Žodžių skaičiavimas
 Vartotojo prašoma įvesti tekstinio failo pavadinimą (*.txt pridedama automatiškai*), kuriame norima suskaičiuoti žodžių pasikartojimą.
